@@ -26,7 +26,7 @@ def attackers(board):
             for c in range(n):
                 if board[r][c] == "K":
                     kr, kc = r, c
-
+    
     pawn_attacks = [(1, -1), (1, 1)] 
     for dr, dc in pawn_attacks:
         r, c = kr + dr, kc + dc
