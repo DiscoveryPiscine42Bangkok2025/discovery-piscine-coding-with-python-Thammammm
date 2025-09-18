@@ -1,10 +1,8 @@
-import sys
+text = input("Enter words separated by space: ").strip()
 
-item_list = sys.argv[1:]
-
-if len(item_list) <= 2:
+if not text or len(text.split()) < 2:
     print("none")
 else:
-    reversed_list = item_list[::-1]
-    for item in reversed_list:
-        print(item)
+    words = text.split()
+    for word in reversed(words):
+        print(word)
